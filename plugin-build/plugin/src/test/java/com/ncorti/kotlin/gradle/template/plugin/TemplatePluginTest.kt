@@ -1,4 +1,4 @@
-package com.scto.simple.plugin
+package com.scto.simpleplugin.plugin
 
 import org.gradle.testfixtures.ProjectBuilder
 import org.junit.Assert.assertEquals
@@ -11,7 +11,7 @@ class TemplatePluginTest {
     @Test
     fun `plugin is applied correctly to the project`() {
         val project = ProjectBuilder.builder().build()
-        project.pluginManager.apply("com.scto.simple.plugin")
+        project.pluginManager.apply("com.scto.simpleplugin.plugin")
 
         assert(project.tasks.getByName("templateExample") is TemplateExampleTask)
     }
@@ -19,7 +19,7 @@ class TemplatePluginTest {
     @Test
     fun `extension templateExampleConfig is created correctly`() {
         val project = ProjectBuilder.builder().build()
-        project.pluginManager.apply("com.scto.simple.plugin")
+        project.pluginManager.apply("com.scto.simpleplugin.plugin")
 
         assertNotNull(project.extensions.getByName("templateExampleConfig"))
     }
@@ -27,7 +27,7 @@ class TemplatePluginTest {
     @Test
     fun `parameters are passed correctly from extension to task`() {
         val project = ProjectBuilder.builder().build()
-        project.pluginManager.apply("com.scto.simple.plugin")
+        project.pluginManager.apply("com.scto.simpleplugin.plugin")
         val aFile = File(project.projectDir, ".tmp")
         (project.extensions.getByName("templateExampleConfig") as TemplateExtension).apply {
             tag.set("a-sample-tag")
