@@ -1,4 +1,4 @@
-package com.scto.simple.plugin
+package com.scto.simpleplugin.plugin
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.RegularFileProperty
