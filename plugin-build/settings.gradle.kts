@@ -31,6 +31,6 @@ gradleEnterprise {
     }
 }
 
-rootProject.name = ("com.scto.simple.plugin")
+rootProject.name = ("com.scto.simpleplugin")
 
 include(":plugin")
