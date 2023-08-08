@@ -1,4 +1,4 @@
-package com.ncorti.kotlin.gradle.template.plugin
+package com.scto.simple.plugin
 
 import org.gradle.testfixtures.ProjectBuilder
 import org.junit.Assert.assertEquals
