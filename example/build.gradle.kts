@@ -1,6 +1,6 @@
 plugins {
     java
-    id("com.scto.simple.plugin")
+    id("com.scto.simpleplugin.plugin")
 }
 
 templateExampleConfig {
